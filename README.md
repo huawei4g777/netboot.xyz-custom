@@ -65,4 +65,4 @@ Create a PUBLIC repository.
 Example | مثال:
 
 ```text
-netboot
+Aurora Netboot
