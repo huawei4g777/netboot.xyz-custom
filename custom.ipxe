@@ -13,10 +13,10 @@ choose target && goto ${target}
 chain https://boot.netboot.xyz
 
 :tools
-chain https://YOURNAME.github.io/netboot/tools.ipxe
+chain https://huawei4g777.github.io/Aurora-Netboot/tools.ipxe
 
 :isos
-chain https://YOURNAME.github.io/netboot/isos.ipxe
+chain https://huawei4g777.github.io/Aurora-Netboot/isos.ipxe
 
 :reboot
 reboot
