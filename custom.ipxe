@@ -1,0 +1,22 @@
+#!ipxe
+
+menu Ibrahim Netboot 😎
+
+item official Official netboot.xyz
+item tools My Tools
+item isos My Isos
+item reboot Reboot
+
+choose target && goto ${target}
+
+:official
+chain https://boot.netboot.xyz
+
+:tools
+chain https://YOURNAME.github.io/netboot/tools.ipxe
+
+:isos
+chain https://YOURNAME.github.io/netboot/isos.ipxe
+
+:reboot
+reboot
