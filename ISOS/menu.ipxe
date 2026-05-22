@@ -1,0 +1,41 @@
+#!ipxe
+
+# ============================
+# Aurora Netboot Menu 😎😎😎
+# ============================
+
+:mainmenu
+menu MENU NAME HERE
+
+item item1        ITEM 1 NAME
+item item2        ITEM 2 NAME
+item item3        ITEM 3 NAME
+item back         Back
+item reboot       Reboot
+
+choose target && goto ${target}
+
+:item1
+# For ISO/IMG
+# sanboot https://LINK/file.iso
+
+# For another menu
+# chain https://LINK/menu.ipxe
+
+goto mainmenu
+
+:item2
+# Put your link here
+
+goto mainmenu
+
+:item3
+# Put your link here
+
+goto mainmenu
+
+:back
+chain https://YOURNAME.github.io/Aurora-Netboot/custom.ipxe
+
+:reboot
+reboot
